@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { IsExistingProvider } from './core/validators/is-existing.validator';
 
 @Module({
   imports: [
@@ -19,6 +20,6 @@ import { MongooseModule } from '@nestjs/mongoose';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, IsExistingProvider],
 })
 export class AppModule {}
