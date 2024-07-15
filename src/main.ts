@@ -4,9 +4,9 @@ import { ValidationPipe } from '@nestjs/common';
 import { useContainer } from 'class-validator';
 import helmet from 'helmet';
 import * as compression from 'compression';
-import { GlobalExceptionFilter } from './core/exception-filters/global.exception.filter';
 import { ResponseInterceptor } from './core/interceptors/response/response.interceptor';
 import { ValidationException } from './core/exceptions/validator.exception';
+import { GlobalExceptionFilter } from './core/exception-filters/global.exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

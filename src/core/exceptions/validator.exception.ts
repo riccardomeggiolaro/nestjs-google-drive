@@ -11,6 +11,6 @@ export class ValidationException extends BadRequestException {
     }
 }
 
-export const isValidationError = (error: HttpException): error is ValidationException => {
+export const isValidationError = (error: unknown): error is ValidationException => {
     return error instanceof ValidationException;
 };
