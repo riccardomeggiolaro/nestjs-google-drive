@@ -58,11 +58,17 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## API GOOGLE DRIVE
+## TUTORIAL TO CREATE A PERSONAL API KEY FROM GOOGLE
+
+https://www.youtube.com/watch?v=bkaQTLCBBeo
+
+## API GOOGLE DRIVE ON .ENV
 
 ```bash
 $ FOLDER_ID=[folder_id]
+
 $ SCOPE=https://www.googleapis.com/auth/drive
+
 $ API_KEYS='{
         "type": [type],
         "project_id": [project_id],
