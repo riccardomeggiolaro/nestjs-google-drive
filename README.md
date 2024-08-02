@@ -60,9 +60,10 @@ $ npm run test:cov
 
 ## API GOOGLE DRIVE
 
-FOLDER_ID=[folder_id]
-SCOPE=https://www.googleapis.com/auth/drive
-API_KEYS='{
+```bash
+$ FOLDER_ID=[folder_id]
+$ SCOPE=https://www.googleapis.com/auth/drive
+$ API_KEYS='{
         "type": [type],
         "project_id": [project_id],
         "private_key_id": [private_key_id],
@@ -75,6 +76,7 @@ API_KEYS='{
         "client_x509_cert_url": [client_x509_cert_url],
         "universe_domain": "googleapis.com"
 }'
+```
 
 ## Support
 
