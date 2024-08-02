@@ -22,6 +22,32 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## TUTORIAL TO CREATE A PERSONAL API KEY FROM GOOGLE
+
+https://www.youtube.com/watch?v=bkaQTLCBBeo
+
+## .ENV
+
+```bash
+$ FOLDER_ID=[folder_id]
+
+$ SCOPE=https://www.googleapis.com/auth/drive
+
+$ API_KEYS='{
+        "type": [type],
+        "project_id": [project_id],
+        "private_key_id": [private_key_id],
+        "private_key": [private_key],
+        "client_email": [client_email],
+        "client_id": "[client_id]",
+        "auth_uri": [auth_uri],
+        "token_uri": [token_uri],
+        "auth_provider_x509_cert_url": [auth_provider_x509_cert_url],
+        "client_x509_cert_url": [client_x509_cert_url],
+        "universe_domain": "googleapis.com"
+}'
+```
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -56,32 +82,6 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
-```
-
-## TUTORIAL TO CREATE A PERSONAL API KEY FROM GOOGLE
-
-https://www.youtube.com/watch?v=bkaQTLCBBeo
-
-## API GOOGLE DRIVE ON .ENV
-
-```bash
-$ FOLDER_ID=[folder_id]
-
-$ SCOPE=https://www.googleapis.com/auth/drive
-
-$ API_KEYS='{
-        "type": [type],
-        "project_id": [project_id],
-        "private_key_id": [private_key_id],
-        "private_key": [private_key],
-        "client_email": [client_email],
-        "client_id": "[client_id]",
-        "auth_uri": [auth_uri],
-        "token_uri": [token_uri],
-        "auth_provider_x509_cert_url": [auth_provider_x509_cert_url],
-        "client_x509_cert_url": [client_x509_cert_url],
-        "universe_domain": "googleapis.com"
-}'
 ```
 
 ## Support
