@@ -2,10 +2,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ConfigModule, ConfigService } from '@nestjs/config';
-import { MongooseModule } from '@nestjs/mongoose';
-import { IsExistingProvider } from './core/validators/is-existing.validator';
-import { GoogleDriveModule } from './modules/google-drive/google-drive.module';
+import { ConfigModule } from '@nestjs/config';
+import { DriveApiModule } from './api/drive/drive.module';
+import { DriveModule } from './modules/drive/drive.module';
+import { DriveAbstractService } from './modules/drive/service/drive.abstract.service';
+import { GoogleDriveService } from './modules/drive/service/google-drive.service';
 
 @Module({
   imports: [
@@ -13,16 +14,12 @@ import { GoogleDriveModule } from './modules/google-drive/google-drive.module';
       isGlobal: true,
       envFilePath: '.env',
     }),
-    MongooseModule.forRootAsync({
-      imports: [ConfigModule],
-      inject: [ConfigService],
-      useFactory: async (config: ConfigService) => ({
-        uri: config.get<string>('MONGODB_URI'),
-      }),
-    }),
-    GoogleDriveModule
+    DriveModule.forRoot([
+      { provide: DriveAbstractService, useClass: GoogleDriveService }
+    ]),
+    DriveApiModule,
   ],
   controllers: [AppController],
-  providers: [AppService, IsExistingProvider],
+  providers: [AppService],
 })
 export class AppModule {}
