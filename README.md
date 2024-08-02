@@ -22,11 +22,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## TUTORIAL TO CREATE A PERSONAL API KEY FROM GOOGLE
+## Tutorial to create a personal api key from google
 
 https://www.youtube.com/watch?v=bkaQTLCBBeo
 
-## .ENV
+## .env
 
 ```bash
 $ FOLDER_ID=[folder_id]
