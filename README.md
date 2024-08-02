@@ -58,6 +58,24 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## API GOOGLE DRIVE
+
+FOLDER_ID=[folder_id]
+SCOPE=https://www.googleapis.com/auth/drive
+API_KEYS='{
+        "type": [type],
+        "project_id": [project_id],
+        "private_key_id": [private_key_id],
+        "private_key": [private_key],
+        "client_email": [client_email],
+        "client_id": "[client_id]",
+        "auth_uri": [auth_uri],
+        "token_uri": [token_uri],
+        "auth_provider_x509_cert_url": [auth_provider_x509_cert_url],
+        "client_x509_cert_url": [client_x509_cert_url],
+        "universe_domain": "googleapis.com"
+}'
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
